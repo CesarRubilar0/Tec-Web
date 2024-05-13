@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patitas Con huella</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- Inicio del Nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="/Patitasconhuella.html">
+                <img src="/Img/Logo.png" alt="Logo" width="40" height="40" class="d-inline-block ms-3 rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="me-auto"></div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="/Patitasconhuella.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="/Paginas/QuienesSomos.html">QuienesSomos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Paginas/GaleriaClientes.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Paginas/Formulario.html">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Paginas/Contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin del Nav -->
+
+    <!--Inicio Formulario -->
+    <section id="form" class="container py-3 mb-5">
+        <div class="py-5 d-flex align-items-center justify-content-center">
+            <h2 class="fw-bold">Formulario datos de Nuestros Clientes</h2>
+        </div>
+        <div class="row">
+            <div class="py-5 d-flex align-items-center justify-content-center col">
+                <form class="" style="width: 500px;">
+                    <div class="mb-4">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for=""><b>Fecha de vacunacion</b></label>
+                        <input type="date">
+                    </div>
+                    <div class="mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Vacunas</option>
+                            <option value="1">Antirabica</option>
+                            <option value="2">Traquebronquitis KC</option>
+                            <option value="3">Octuple</option>
+                            <option value="4">Leucemia Felina</option>
+                            <option value="5">Leptospirosis</option>
+                            <option value="6">Distemper</option>
+                            <option value="7">Parainfluenza</option>
+                            <option value="8">Bordetelosis</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label><b>Adjuntar Certificado vacunacion</b></label>
+                        <input type="file">
+                    </div>
+                    <div class="mb-4">
+                        <label for=""><b>proxima vacuna</b></label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Comentarios"></textarea>
+                    </div>
+                    <div class="mb-4 d-flex align-items-center justify-content-center">
+                        <button type="submit" class="btn btn-outline-info" style="width: 30%;">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Fin Formulario-->
+
+    <!-- Seccion Pie de Pagina ( Footer) -->
+    <footer class="w-100 bg-info py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                    <img src="/Img/Logo.png" alt="Logo" width="60" height="60"
+                        class="d-inline-block ms-3 rounded-circle">
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                    <h4>Olfateanos en las Redes</h4>
+                    <a href="/Enlaces/Patitasconhuella.html" >Facebook</a>
+                    <a href="/Enlaces/Patitasconhuella.html" >Twitter</a>
+                    <a href="/Enlaces/Patitasconhuella.html" >Instagram</a>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                    <h4>Patitas Con Huella</h4>
+                    <p>&copy; 2024 Patitas con Huella. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Pie de Pagina ( Footer) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
