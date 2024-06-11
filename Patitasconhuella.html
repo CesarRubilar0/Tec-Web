@@ -1,76 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patitas Con huella</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas con Huella</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="Css/Css.css" </head>
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #C5ADC5;
+            background: linear-gradient(135deg, #C5ADC5, #B2B5E0);
+            padding-top: 56px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 0;
+            }
+        }
+    </style>
+
+    <style>
+        #formulario {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            #formulario {
+                max-width: 90%;
+            }
+        }
+    </style>
+
+</head>
 
 <body>
 
-
-    <!-- Inicio del Nav -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-black" href="/Patitasconhuella.html">
-                <img src="/Img/Logo.png" alt="Logo" width="40" height="40" class="d-inline-block ms-3 rounded-circle">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="me-auto"></div>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="/Patitasconhuella.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="/Paginas/QuienesSomos.html">QuienesSomos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/Paginas/GaleriaClientes.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/Paginas/Formulario.html">Formulario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/Paginas/Contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="/Paginas/PatitascnHuella.html">Patitas con Huella</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Servicios">Tabla de servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulario">Formulario</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <!-- fin del Nav -->
 
-    <!-- Inicio Presentacion Inicio-->
-    <section id="index.html" class="container">
-        <div class="container-fluid row vh-100 d-flex align-items-center justify-content-center py-5">
-            <div class="d-flex align-items-center justify-content-center">
-                <img class="img-fluid imagen-cambio" src="img/portada.jpg" alt="" width="700">
-            </div>
-            <div class="d-flex flex-column px-5 justify-content-center align-items-center">
-                <h1 class="pb-5 fw-bold">BIENVENIDOS A PATITAS CON HUELLAS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam unde, facere voluptas recusandae
-                    nostrum hic atque pariatur reprehenderit nobis nihil, aliquid quae enim, in illum quidem eos
-                    quisquam?
-                    Reiciendis totam et molestias assumenda quos impedit, ab minus, tempora voluptatum blanditiis
-                    dignissimos nulla reprehenderit consequuntur sequi laboriosam pariatur quam velit!</p>
-            </div>
+    <!-- Inicio -->
+    <section id="inicio" class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenido a Patitas con Huella</h1>
+            <p class="lead">Todo lo que necesitas para el bienestar de tu mascota.</p>
+            <a class="btn btn-primary btn-lg" href="#Servicios" role="button">Nuestros Servicios</a>
         </div>
     </section>
 
-    <!-- Fin Presentacion Inicio-->
-    <!-- Inicio Carrusel-->
-    <section id="picture-mascotas" class="py-3">
-        <div class="container">
+    <!--  Inicio Carrusel-->
+    <section id="galeria" class="py-3">
+        <div class="container px-4 px-lg-5">
             <div class="py-5 d-flex align-items-center justify-content-center">
-                <h2 class="fw-bold">Fotos Animales</h2>
+                <h2 class="fw-bold">PATOTAS</h2>
             </div>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -108,37 +127,319 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
     </section>
 
-    <!-- Fin Carrusel-->
-
-    <!-- Seccion Pie de Pagina ( Footer) -->
-    <footer class="w-100 bg-dark py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-                <img src="/Img/Logo.png" alt="Logo" width="60" height="60"
-                    class="d-inline-block ms-3 rounded-circle">
-            </div>
-            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-                <h4>Olfateanos en las Redes</h4>
-                <a href="/Enlaces/Patitasconhuella.html" class="text-white">Facebook</a>
-                <a href="/Enlaces/Patitasconhuella.html" class="text-white">Twitter</a>
-                <a href="/Enlaces/Patitasconhuella.html" class="text-white">Instagram</a>
-            </div>
-            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-                <h4>Patitas Con Huella</h4>
-                <p class="text-white">&copy; 2024 Patitas con Huella. Todos los derechos reservados.</p>
-            </div>
+    <!-- Nosotros-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Img/hugs.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">"Patitas y Huellas: Tu Rincón de Cuidado y Comodidad para Mascotas"</h1>
+            <p>En Patitas y Huellas, entendemos que tus mascotas merecen lo mejor, por eso ofrecemos una amplia gama
+                de servicios y productos diseñados para satisfacer todas sus necesidades. Desde juguetes y
+                accesorios de alta calidad hasta servicios de grooming y atención veterinaria de primera clase, nos
+                esforzamos por ser tu destino único para todo lo relacionado con el bienestar y la felicidad de tus
+                fieles compañeros.</p>
+            <a class="btn btn-primary btn-lg" href="#formulario" role="button">Habla con Nosotros</a>
         </div>
     </div>
-</footer>
-    <!-- Fin Pie de Pagina ( Footer) -->
 
+
+
+
+    <!-- Registro de mascotas -->
+    <section id="Servicios" class="container mt-5">
+        <h2 class="text-center">Servicios de mascotas</h2>
+        <button id="addRow" class="btn btn-primary mb-3">Agregar Fila</button>
+        <button id="restoreRow" class="btn btn-secondary mb-3">Restaurar Fila Eliminada</button>
+        <table id="example" class="display">
+            <thead>
+                <tr>
+                    <th>Tipo Mascotas</th>
+                    <th>Juguetes</th>
+                    <th>Ropa</th>
+                    <th>Accesorios</th>
+                    <th>Medicamentos</th>
+                    <th>Servicios</th>
+                    <th>Comida</th>
+                    <th>Edad</th>
+                    <th>Salud</th>
+                    <th>Dueño</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario" class="container mt-5">
+        <h2 class="text-center">Formulario</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="archivo">Archivo Adjunto</label>
+                <input type="file" class="form-control" id="archivo" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form-control" id="comentarios" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seccion Pie de Pagina ( Footer) -->
+    <footer class="w-100 bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column text-white">
+                    <h4>Contacto</h4>
+                    <p>
+                        <strong>Dirección:</strong> Calle Principal 123, Ciudad<br>
+                        <strong>Teléfono:</strong> (123) 456-7890<br>
+                        <strong>Email:</strong> <a href="mailto:contacto@patitasconhuella.com"
+                            class="text-white">contacto@patitasconhuella.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column text-white">
+                    <h4>Sígue la huella </h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column text-white">
+                    <h4>Horarios</h4>
+                    <p>
+                        Lunes a Viernes: 9:00 AM - 7:00 PM<br>
+                        Sábados: 9:00 AM - 2:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2024 Patitas con Huella. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón de Subir -->
+    <a href="#inicio" class="btn btn-primary btn-floating btn-lg back-to-top" role="button"
+        style="position: fixed; bottom: 20px; right: 20px;"><i class="fas fa-arrow-up"></i> Subir</a>
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- AJax-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Sweeetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Archivos de biblioteca Javascript Data tables -->
+
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+    <script src="/JavaScript/funciones.js"></script>
+    <!-- Bootstrap - JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+
+        $(document).ready(function () {
+            var deletedData = [];
+
+            var table = $('#example').DataTable({
+                "data": [
+                    { "tipo_mascotas": "Perro", "juguetes": "Pelota", "ropa": "Suéter", "accesorios": "Collar", "medicamentos": "Antipulgas", "servicios": "Baño", "comida": "Croquetas", "edad": "3 años", "salud": "Buena", "dueño": "Juan Pérez" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Ratón de juguete", "ropa": "Capa", "accesorios": "Correa", "medicamentos": "Desparasitante", "servicios": "Corte de uñas", "comida": "Lata", "edad": "2 años", "salud": "Buena", "dueño": "Ana López" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Hueso de plástico", "ropa": "Chaleco", "accesorios": "Arnés", "medicamentos": "Vitaminas", "servicios": "Paseo", "comida": "Alimento húmedo", "edad": "1 año", "salud": "Regular", "dueño": "Carlos Gómez" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Pelota con cascabel", "ropa": "Gorro", "accesorios": "Collar con cascabel", "medicamentos": "Antibiótico", "servicios": "Consulta veterinaria", "comida": "Atún", "edad": "5 años", "salud": "Buena", "dueño": "María Fernández" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Cuerda", "ropa": "Impermeable", "accesorios": "Chaleco reflectante", "medicamentos": "Analgésico", "servicios": "Vacunación", "comida": "Carne", "edad": "4 años", "salud": "Buena", "dueño": "Pedro Sánchez" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Pluma", "ropa": "Bufanda", "accesorios": "Juguete colgante", "medicamentos": "Suplemento", "servicios": "Spa", "comida": "Pescado", "edad": "3 años", "salud": "Excelente", "dueño": "Laura Martínez" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Juguete chillón", "ropa": "Sombrero", "accesorios": "Cinturón de seguridad", "medicamentos": "Desinfectante", "servicios": "Guardería", "comida": "Snacks", "edad": "6 meses", "salud": "Buena", "dueño": "Andrés Ramírez" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Túnel", "ropa": "Disfraz", "accesorios": "Rascador", "medicamentos": "Antiinflamatorio", "servicios": "Masaje", "comida": "Pienso", "edad": "2 años", "salud": "Buena", "dueño": "Claudia Díaz" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Disco volador", "ropa": "Capa de superhéroe", "accesorios": "Correa de LED", "medicamentos": "Antiparasitario", "servicios": "Alojamiento", "comida": "Barf", "edad": "5 años", "salud": "Excelente", "dueño": "Roberto Torres" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Ratón de cuerda", "ropa": "Chaqueta", "accesorios": "Collar GPS", "medicamentos": "Probiótico", "servicios": "Dentista", "comida": "Golosinas", "edad": "1 año", "salud": "Buena", "dueño": "Sandra Reyes" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Mordedor", "ropa": "Botas", "accesorios": "Sombrero", "medicamentos": "Vacunas", "servicios": "Veterinario", "comida": "Huesos", "edad": "2 años", "salud": "Buena", "dueño": "Miguel Hernández" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Bola de lana", "ropa": "Disfraz de león", "accesorios": "Correa de paseo", "medicamentos": "Antihistamínico", "servicios": "Cirugía", "comida": "Galletas", "edad": "4 años", "salud": "Regular", "dueño": "Gloria Ruiz" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Pelota con sonido", "ropa": "Chaleco salvavidas", "accesorios": "Mochila", "medicamentos": "Antibiótico", "servicios": "Baño seco", "comida": "Sardinas", "edad": "3 años", "salud": "Buena", "dueño": "Diana Ortiz" },
+                    { "tipo_mascotas": "Gato", "juguetes": "Juguete interactivo", "ropa": "Jersey de lana", "accesorios": "Casa de madera", "medicamentos": "Antifúngico", "servicios": "Cepillado", "comida": "Pate", "edad": "1 año", "salud": "Buena", "dueño": "Esteban Romero" },
+                    { "tipo_mascotas": "Perro", "juguetes": "Hueso de goma", "ropa": "Capa de lluvia", "accesorios": "Placa de identificación", "medicamentos": "Calmante", "servicios": "Peluquería", "comida": "Frutas", "edad": "2 años", "salud": "Buena", "dueño": "Isabel García" }
+                ],
+                "columns": [
+                    { "data": "tipo_mascotas" },
+                    { "data": "juguetes" },
+                    { "data": "ropa" },
+                    { "data": "accesorios" },
+                    { "data": "medicamentos" },
+                    { "data": "servicios" },
+                    { "data": "comida" },
+                    { "data": "edad" },
+                    { "data": "salud" },
+                    { "data": "dueño" },
+                    { "data": null, "defaultContent": "<button class='deleteBtn btn btn-danger'>Eliminar</button>" }
+                ]
+            });
+
+            $('#addRow').on('click', function () {
+                Swal.fire({
+                    title: 'Agregar Nuevo Registro',
+                    html:
+                        '<input id="tipo_mascotas" class="swal2-input" placeholder="Tipo de Mascotas">' +
+                        '<input id="juguetes" class="swal2-input" placeholder="Juguetes">' +
+                        '<input id="ropa" class="swal2-input" placeholder="Ropa">' +
+                        '<input id="accesorios" class="swal2-input" placeholder="Accesorios">' +
+                        '<input id="medicamentos" class="swal2-input" placeholder="Medicamentos">' +
+                        '<input id="servicios" class="swal2-input" placeholder="Servicios">' +
+                        '<input id="comida" class="swal2-input" placeholder="Comida">' +
+                        '<input id="edad" class="swal2-input" placeholder="Edad">' +
+                        '<input id="salud" class="swal2-input" placeholder="Salud">' +
+                        '<input id="dueño" class="swal2-input" placeholder="Dueño">',
+                    focusConfirm: false,
+                    preConfirm: () => {
+                        return [
+                            document.getElementById('tipo_mascotas').value,
+                            document.getElementById('juguetes').value,
+                            document.getElementById('ropa').value,
+                            document.getElementById('accesorios').value,
+                            document.getElementById('medicamentos').value,
+                            document.getElementById('servicios').value,
+                            document.getElementById('comida').value,
+                            document.getElementById('edad').value,
+                            document.getElementById('salud').value,
+                            document.getElementById('dueño').value
+                        ];
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        var newData = result.value;
+                        table.row.add({
+                            "tipo_mascotas": newData[0],
+                            "juguetes": newData[1],
+                            "ropa": newData[2],
+                            "accesorios": newData[3],
+                            "medicamentos": newData[4],
+                            "servicios": newData[5],
+                            "comida": newData[6],
+                            "edad": newData[7],
+                            "salud": newData[8],
+                            "dueño": newData[9]
+                        }).draw();
+
+                        Swal.fire(
+                            'Enviado',
+                            'El registro ha sido agregado con éxito.',
+                            'success'
+                        );
+                    }
+                });
+            });
+
+
+            $('#example tbody').on('click', '.deleteBtn', function () {
+                var row = table.row($(this).parents('tr'));
+                // SweetAlert para confirmar la eliminación
+                Swal.fire({
+                    title: '¿Estás seguro?',
+                    text: "Esta acción no se puede deshacer",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sí, eliminar',
+                    cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Almacenar los datos de la fila eliminada
+                        deletedData.push(row.data());
+                        // Eliminar la fila y actualizar la tabla
+                        row.remove().draw();
+                        Swal.fire(
+                            'Eliminado',
+                            'El registro ha sido eliminado.',
+                            'success'
+                        );
+                    }
+                });
+            });
+
+            $('#restoreRow').on('click', function () {
+                if (deletedData.length > 0) {
+                    // Restaurar la última fila eliminada
+                    table.row.add(deletedData.pop()).draw();
+                    // Mostrar mensaje de restauración
+                    Swal.fire(
+                        'Restaurado',
+                        'Se ha restaurado una fila eliminada.',
+                        'success'
+                    );
+                } else {
+                    Swal.fire('No hay filas eliminadas para restaurar.');
+                }
+            });
+
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+
+                var nombre = $('#nombre').val();
+                var telefono = $('#telefono').val();
+                var correo = $('#correo').val();
+                var archivo = $('#archivo').val();
+                var fecha = $('#fecha').val();
+                var comentarios = $('#comentarios').val();
+
+                if (nombre && telefono && correo && archivo && fecha && comentarios) {
+                    Swal.fire({
+                        title: 'Confirmación',
+                        text: '¿Desea enviar el formulario?',
+                        icon: 'question',
+                        showCancelButton: true,
+                        confirmButtonText: 'Sí, enviar',
+                        cancelButtonText: 'Cancelar'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire(
+                                'Enviado',
+                                'El formulario ha sido enviado con éxito.',
+                                'success'
+                            );
+                            $('#contactForm')[0].reset();
+                        }
+                    });
+                } else {
+                    Swal.fire(
+                        'Error',
+                        'Por favor, complete todos los campos obligatorios.',
+                        'error'
+                    );
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
